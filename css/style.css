@@ -2328,7 +2328,7 @@ h6 {
 
 .wrapper-nav__menu {}
 
-.menu__body {}
+.menu-body {}
 
 .menu-list {
 	display: flex;
@@ -2344,11 +2344,15 @@ h6 {
 	font-weight: 400;
 	font-size: 15px;
 	text-transform: none;
+	letter-spacing: -0.025em;
+	color: #061c27;
+	transition: color 0.3s cubic-bezier(0.1, 0.8, 0.5, 2), font-size 0.3s cubic-bezier(0.1, 0.8, 0.5, 2);
 }
 
-.menu__item {}
-
-.menu__link {}
+.menu-link-footer:hover {
+	font-size: 16px;
+	color: #00aaff;
+}
 
 .footer__wrapper-item {
 	display: flex;
@@ -2479,4 +2483,50 @@ h6 {
 .wrapper-item__copyright {
 	font-weight: 300;
 	font-size: 15px;
+}
+
+@media (max-width: 991.98px) {
+	.footer__wrapper-contacts {
+		flex: 0 1 50%;
+	}
+
+	.footer__wrapper-nav {
+		flex: 0 1 50%;
+	}
+
+	.footer__wrapper-item {
+		flex: 1 1 100%;
+		padding-top: 40px;
+	}
+
+	.footer__wrapper {
+		flex-wrap: wrap;
+	}
+
+	.wrapper-item__social {
+		padding-bottom: 20px;
+	}
+
+	.wrapper-item__form {
+		padding-bottom: 20px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.footer__wrapper {
+		display: inline-block;
+	}
+
+	.info-contacts {
+		text-align: center;
+	}
+
+	.wrapper-contacts__ip {
+		text-align: center;
+	}
+
+	.footer__wrapper-nav {
+		text-align: center;
+		padding: 50px 0px 30px 0px;
+	}
 }
