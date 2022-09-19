@@ -2476,4 +2476,7 @@ h6 {
 	border-left-width: 0;
 }
 
-.wrapper-item__copyright {}
+.wrapper-item__copyright {
+	font-weight: 300;
+	font-size: 15px;
+}
